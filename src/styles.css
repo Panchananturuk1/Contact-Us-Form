@@ -1,1 +1,5 @@
 /* Add application styles & imports to this file! */
+
+body {
+  background: linear-gradient(to left, green 50%, #faf55c 50%);
+}

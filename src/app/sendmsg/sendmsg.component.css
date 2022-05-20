@@ -1,5 +1,9 @@
+body {
+  background-color: green;
+}
+
 .parents {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   /* width: 80%; */
   /* height: 550px; */
   /* background-color: white;
@@ -7,9 +11,9 @@
   overflow: hidden;
 }
 
-.backcolor {
+/* .backcolor {
   background-color: red;
-}
+} */
 
 input[type='text'] {
   border: 0px;
@@ -25,7 +29,7 @@ input[type='text'] {
 .parent-div {
   overflow: hidden;
   display: inline-block;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* width: 100%; */
 
   width: 80%;
@@ -44,7 +48,7 @@ input[type='text'] {
 }
 
 form {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: 100%;
 }
 
@@ -84,7 +88,7 @@ textarea {
 
 .contact-info {
   overflow: hidden;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 20%;
   color: white;
   font-size: large;
@@ -99,6 +103,8 @@ textarea {
 
 .div-rigth {
   border: 2px solid blue;
-  width: 150px;
-  margin-left: 40px;
+  /* width: 150px; */
+  /* margin-left: 40px; */
+  margin-left: 200px;
+  width: 80%;
 }
