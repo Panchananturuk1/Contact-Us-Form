@@ -37,7 +37,7 @@ a {
   margin-top: 0px;
   height: 430;
   width: 28%;
-  background-color: red;
+  background-color: white;
 }
 
 .mybutton {
@@ -55,16 +55,16 @@ a {
   border: 1px solid #27a55c;
 }
 
-.btn2:hover {
+/* .btn2:hover {
   background-color: #27a55c;
-}
+} */
 
 .btn3 {
   color: #2562e7;
   border: 1px solid #2562e7;
 }
 
-.btn2:hover {
+.btn3:hover {
   background-color: #2562e7;
 }
 
@@ -78,5 +78,6 @@ a {
 }
 
 .green {
-  color: #27a55c;
+  margin-top: 20px;
+  color: red;
 }
