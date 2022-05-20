@@ -1,5 +1,9 @@
 .parents {
   border: 2px solid black;
+  width: 70%;
+  height: 500px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 input[type='text'] {
@@ -7,7 +11,7 @@ input[type='text'] {
   border-bottom: 1px solid black;
   margin: 10px;
   border-radius: 0px;
-  width: 40%;
+  width: 97%;
   display: inline-block;
 }
 
@@ -21,10 +25,19 @@ input[type='text'] {
   margin: 20px;
   display: inline-block;
   border: 1px solid black;
-  width: 30%;
+  width: 45%;
 }
 
 form {
   border: 1px solid green;
   width: 100%;
+}
+
+h1 {
+  font-size: 25px;
+  color: green;
+}
+
+label {
+  color: green;
 }
