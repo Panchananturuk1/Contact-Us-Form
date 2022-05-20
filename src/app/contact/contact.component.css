@@ -7,7 +7,7 @@ a {
 
 .parent-box {
   text-align: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .box1 {
@@ -27,6 +27,7 @@ a {
 
 .box2 {
   border-top: 10px solid #27a55c;
+  /* height: 540px; */
 }
 
 .box3 {
@@ -35,7 +36,7 @@ a {
 
 .box1:hover {
   margin-top: 0px;
-  height: 430;
+  height: 500px;
   width: 28%;
   background-color: white;
 }
@@ -53,11 +54,13 @@ a {
 .btn2 {
   color: #27a55c;
   border: 1px solid #27a55c;
+  /* background-color: #27a55c; */
 }
 
-/* .btn2:hover {
+.btn2:hover {
+  color: white;
   background-color: #27a55c;
-} */
+}
 
 .btn3 {
   color: #2562e7;
@@ -65,10 +68,11 @@ a {
 }
 
 .btn3:hover {
+  color: white;
   background-color: #2562e7;
 }
 
-.mybutton:hover {
+.myhover:hover {
   color: white;
   background-color: #11a8d8;
 }
@@ -79,5 +83,5 @@ a {
 
 .green {
   margin-top: 20px;
-  color: red;
+  color: #27a55c;
 }
