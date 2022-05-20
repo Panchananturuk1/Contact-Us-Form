@@ -1,9 +1,14 @@
 .parents {
   border: 2px solid black;
-  width: 70%;
-  height: 500px;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* width: 80%; */
+  /* height: 550px; */
+  /* background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  overflow: hidden;
+}
+
+.backcolor {
+  background-color: red;
 }
 
 input[type='text'] {
@@ -13,19 +18,29 @@ input[type='text'] {
   border-radius: 0px;
   width: 97%;
   display: inline-block;
+  font-size: large;
+  padding: 0px;
 }
 
 .parent-div {
+  overflow: hidden;
   display: inline-block;
   border: 1px solid red;
-  width: 100%;
+  /* width: 100%; */
+
+  width: 80%;
+  height: 550px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* margin: auto; */
+  margin-left: 130px;
 }
 
 .child {
   margin: 20px;
   display: inline-block;
-  border: 1px solid black;
-  width: 45%;
+  /* border: 1px solid black; */
+  width: 44%;
 }
 
 form {
@@ -39,8 +54,51 @@ h1 {
 }
 
 label {
+  font-size: large;
   color: green;
 }
- p{
-   
- }
+/* p {
+} */
+
+.textarea {
+  display: inline-block;
+}
+
+textarea {
+  font-size: x-large;
+  border: 0px;
+  width: 80%;
+  /* height: 20px; */
+  border-bottom: 1px solid black;
+  border-radius: 0px;
+}
+
+.send-btn {
+  border: 0px;
+  background-color: green;
+  width: 17%;
+  padding: 10px;
+  color: white;
+  font-size: large;
+}
+
+.contact-info {
+  overflow: hidden;
+  border: 1px solid black;
+  width: 20%;
+  color: white;
+  font-size: large;
+  padding: 30px;
+  background-color: green;
+  height: 420px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+
+.div-rigth {
+  border: 2px solid blue;
+  width: 150px;
+  margin-left: 40px;
+}
