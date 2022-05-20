@@ -1,5 +1,7 @@
 body {
-  background-color: green;
+  height: 100vh;
+  padding: 0;
+  background: linear-gradient(to left, green 50%, #faf55c 50%);
 }
 
 .parents {
