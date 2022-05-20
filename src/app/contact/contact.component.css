@@ -1,3 +1,6 @@
+a {
+  text-decoration: none;
+}
 .center {
   text-align: center;
 }
@@ -8,17 +11,18 @@
 }
 
 .box1 {
-  padding: 50px;
+  padding: 65px;
   display: inline-block;
   width: 27%;
-  height: 400px;
+  height: 440px;
   /* border: 1px solid black; */
   border: 0px;
   border-top: 10px solid #11a8d8;
   border-radius: 3%;
   margin: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  text-align: justify;
+  text-align: left;
+  overflow: hidden;
 }
 
 .box2 {
@@ -36,6 +40,43 @@
   background-color: red;
 }
 
-.mybuttons{
-  width: 50px;
+.mybutton {
+  padding: 6px;
+  margin-top: 30px;
+  background-color: white;
+  color: #11a8d8;
+  border-radius: 10px;
+  width: 90%;
+  border: 1px solid #11a8d8;
+}
+
+.btn2 {
+  color: #27a55c;
+  border: 1px solid #27a55c;
+}
+
+.btn2:hover {
+  background-color: #27a55c;
+}
+
+.btn3 {
+  color: #2562e7;
+  border: 1px solid #2562e7;
+}
+
+.btn2:hover {
+  background-color: #2562e7;
+}
+
+.mybutton:hover {
+  color: white;
+  background-color: #11a8d8;
+}
+
+.heading {
+  font-size: 30px;
+}
+
+.green {
+  color: #27a55c;
 }
