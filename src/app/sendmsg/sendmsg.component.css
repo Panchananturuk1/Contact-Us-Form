@@ -1,6 +1,10 @@
-body {
+.backcolor {
+  /* height: 100%; */
+  /* margin-top: 0px; */
   height: 100vh;
-  padding: 0;
+  /* padding:0 auto; */
+  /* margin-top: 0; */
+
   background: linear-gradient(to left, green 50%, #faf55c 50%);
 }
 
@@ -28,18 +32,17 @@ input[type='text'] {
   padding: 0px;
 }
 
-.parent-div {
+.forms {
   overflow: hidden;
-  display: inline-block;
-  /* border: 1px solid red; */
-  /* width: 100%; */
-
-  width: 80%;
+  /* display: inline-block; */
+  border: 1px solid red;
+  width: 70%;
+  margin: 0 auto;
   height: 550px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  /* margin: auto; */
-  margin-left: 130px;
+
+  /* margin-left: 130px; */
 }
 
 .child {
@@ -103,8 +106,8 @@ textarea {
   left: 5%;
 }
 
-.div-rigth {
-  border: 2px solid blue;
+.contents {
+  /* border: 2px solid blue; */
   /* width: 150px; */
   /* margin-left: 40px; */
   margin-left: 200px;
