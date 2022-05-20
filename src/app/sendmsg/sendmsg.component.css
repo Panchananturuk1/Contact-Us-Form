@@ -21,7 +21,8 @@
   background-color: red;
 } */
 
-input[type='text'] {
+input[type='text'],
+input[type='email'] {
   border: 0px;
   border-bottom: 1px solid black;
   margin: 10px;
@@ -35,10 +36,10 @@ input[type='text'] {
 .forms {
   overflow: hidden;
   /* display: inline-block; */
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 70%;
   margin: 0 auto;
-  height: 550px;
+  height: 600px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
@@ -52,10 +53,10 @@ input[type='text'] {
   width: 44%;
 }
 
-form {
-  /* border: 1px solid green; */
+/* form {
+  border: 1px solid green;
   width: 100%;
-}
+} */
 
 h1 {
   font-size: 25px;
@@ -111,5 +112,13 @@ textarea {
   /* width: 150px; */
   /* margin-left: 40px; */
   margin-left: 200px;
+  padding: 30px;
   width: 80%;
+}
+input.ng-invalid.ng-touched {
+  border-bottom: 1px solid red;
+}
+
+input.ng-valid.ng-touched{
+  border-bottom:3px solid green ;
 }

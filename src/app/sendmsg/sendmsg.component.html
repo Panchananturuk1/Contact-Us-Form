@@ -1,47 +1,72 @@
-<html>
-  <div class="backcolor">
-    <div class="contact-info">
-      <h2>Contact Info</h2>
-
-      <p class="mt-5">2912 meadowbrook Road</p>
-      <p>lorem@ipsum.com</p>
-      <p>310-368-1632</p>
-      <div class="mt-5">
-        <img
-          src="https://img.icons8.com/ios-glyphs/30/000000/facebook-new.png"
-        />
-        <img
-          src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png"
-        />
-        <img
-          src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png"
-        />
-        <img src="https://img.icons8.com/ios-glyphs/30/000000/pinterest.png" />
-        <img src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png" />
-      </div>
+<div class="backcolor">
+  <!-- CONTACT INFO BLOCK -->
+  <div class="contact-info">
+    <h2>Contact Info</h2>
+    <p class="mt-5">2912 meadowbrook Road</p>
+    <p>lorem@ipsum.com</p>
+    <p>310-368-1632</p>
+    <div class="mt-5">
+      <img src="https://img.icons8.com/ios-glyphs/30/000000/facebook-new.png" />
+      <img src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png" />
+      <img
+        src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png"
+      />
+      <img src="https://img.icons8.com/ios-glyphs/30/000000/pinterest.png" />
+      <img src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png" />
     </div>
-    <!-- from -->
-    <div class="parents">
-    <form class="forms mt-5">
+  </div>
+  <!-- MAIN FORM -->
+  <div class="parents">
+    <form [formGroup]="sendMessage" class="forms mt-5" (ngSubmit)="send()">
       <div class="contents mt-5">
         <h1>Send a Message</h1>
 
         <div class="child">
           <label for="">First Name</label> <br />
-          <input class="form-control" type="text" />
+          <input formControlName="firstName" class="form-control" type="text" />
+          <div *ngIf="gets.firstName.errors && gets.firstName.touched">
+            <span class="text-danger" *ngIf="gets.firstName.errors.required"
+              >First Name Required</span
+            >
+          </div>
         </div>
 
         <div class="child">
-          <label for="">First Name</label> <br />
-          <input class="form-control" type="text" />
+          <label for="">Last Name</label> <br />
+          <input formControlName="lastName" class="form-control" type="text" />
+          <div *ngIf="gets.lastName.errors && gets.lastName.touched">
+            <span class="text-danger" *ngIf="gets.lastName.errors.required"
+              >Last Name Required</span
+            >
+          </div>
         </div>
 
         <div class="child">
-          <input class="form-control" placeholder="Email" type="text" />
+          <input
+            formControlName="email"
+            class="form-control"
+            placeholder="Email"
+            type="email"
+          />
+          <div *ngIf="gets.email.errors && gets.email.touched">
+            <span class="text-danger" *ngIf="gets.email.errors.required"
+              >Email Required</span
+            >
+            <span class="text-danger" *ngIf="gets.email.errors.email">Enter a valid email</span>
+          </div>
         </div>
-
         <div class="child">
-          <input class="form-control" placeholder="Mobile Number" type="text" />
+          <input
+            formControlName="mobile"
+            class="form-control"
+            placeholder="Mobile Number"
+            type="text"
+          />
+          <div *ngIf="gets.mobile.errors && gets.mobile.touched">
+            <span class="text-danger" *ngIf="gets.mobile.errors.required"
+              >Mobile Number Required</span
+            >
+          </div>
         </div>
 
         <div class="textarea">
@@ -55,6 +80,5 @@
         <button class="send-btn mt-3">Send</button>
       </div>
     </form>
-    </div>
   </div>
-</html>
+</div>
