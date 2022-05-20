@@ -1,0 +1,41 @@
+.center {
+  text-align: center;
+}
+
+.parent-box {
+  text-align: center;
+  border: 1px solid black;
+}
+
+.box1 {
+  padding: 50px;
+  display: inline-block;
+  width: 27%;
+  height: 400px;
+  /* border: 1px solid black; */
+  border: 0px;
+  border-top: 10px solid #11a8d8;
+  border-radius: 3%;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: justify;
+}
+
+.box2 {
+  border-top: 10px solid #27a55c;
+}
+
+.box3 {
+  border-top: 10px solid #2562e7;
+}
+
+.box1:hover {
+  margin-top: 0px;
+  height: 430;
+  width: 28%;
+  background-color: red;
+}
+
+.mybuttons{
+  width: 50px;
+}
