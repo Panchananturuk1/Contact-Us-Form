@@ -1,0 +1,30 @@
+.parents {
+  border: 2px solid black;
+}
+
+input[type='text'] {
+  border: 0px;
+  border-bottom: 1px solid black;
+  margin: 10px;
+  border-radius: 0px;
+  width: 40%;
+  display: inline-block;
+}
+
+.parent-div {
+  display: inline-block;
+  border: 1px solid red;
+  width: 100%;
+}
+
+.child {
+  margin: 20px;
+  display: inline-block;
+  border: 1px solid black;
+  width: 30%;
+}
+
+form {
+  border: 1px solid green;
+  width: 100%;
+}
