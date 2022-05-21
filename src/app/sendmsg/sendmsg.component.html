@@ -52,7 +52,9 @@
             <span class="text-danger" *ngIf="gets.email.errors.required"
               >Email Required</span
             >
-            <span class="text-danger" *ngIf="gets.email.errors.email">Enter a valid email</span>
+            <span class="text-danger" *ngIf="gets.email.errors.email"
+              >Enter a valid email</span
+            >
           </div>
         </div>
         <div class="child">
@@ -77,7 +79,9 @@
             placeholder="Write your Message here"
           ></textarea>
         </div>
-        <button class="send-btn mt-3">Send</button>
+        <button class="send-btn mt-3" (click)="printConsole(sendMessage.value)">
+          Send
+        </button>
       </div>
     </form>
   </div>

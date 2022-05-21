@@ -95,7 +95,7 @@ textarea {
 .contact-info {
   overflow: hidden;
   /* border: 1px solid black; */
-  width: 20%;
+  width: 22%;
   color: white;
   font-size: large;
   padding: 30px;
@@ -119,6 +119,6 @@ input.ng-invalid.ng-touched {
   border-bottom: 1px solid red;
 }
 
-input.ng-valid.ng-touched{
-  border-bottom:3px solid green ;
+input.ng-valid.ng-touched {
+  border-bottom: 3px solid green;
 }
