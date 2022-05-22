@@ -7,6 +7,7 @@ import { HelloComponent } from './hello.component';
 
 import { ContactComponent } from './contact/contact.component';
 import { SendmsgComponent } from './sendmsg/sendmsg.component';
+import { AppRoutingModule, routingComponent } from './app-routing.module'
 
 @NgModule({
   imports: [BrowserModule, FormsModule, ReactiveFormsModule],
@@ -15,6 +16,7 @@ import { SendmsgComponent } from './sendmsg/sendmsg.component';
     HelloComponent,
     ContactComponent,
     SendmsgComponent,
+    routingComponent,
   ],
   bootstrap: [AppComponent],
 })
