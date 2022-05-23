@@ -7,15 +7,17 @@ import { HelloComponent } from './hello.component';
 
 import { ContactComponent } from './contact/contact.component';
 import { SendmsgComponent } from './sendmsg/sendmsg.component';
+import {HeaderComponent} from './header/header.component'
 import { AppRoutingModule, routingComponent } from './app-routing.module'
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, ReactiveFormsModule],
+  imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
   declarations: [
     AppComponent,
     HelloComponent,
     ContactComponent,
     SendmsgComponent,
+    HeaderComponent,
     routingComponent,
   ],
   bootstrap: [AppComponent],
