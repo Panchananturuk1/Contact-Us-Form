@@ -27,6 +27,21 @@ a {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   text-align: left;
   overflow: hidden;
+  position: relative;
+  animation-name: boxes;
+  animation-duration: 2s;
+  /* animation-delay: 1s; */
+  animation-iteration-count: 4;
+  animation-play-state: paused; 
+}
+
+@keyframes boxes {
+  form {
+    width: 200px;
+  }
+  to {
+    width: 370px;
+  }
 }
 
 .box2 {
@@ -38,11 +53,12 @@ a {
   border-top: 10px solid #2562e7;
 }
 
-.box1:hover {
+ .box1:hover {
   margin-top: 0px;
   height: 500px;
   width: 28%;
   background-color: white;
+  animation-play-state: running; 
 }
 
 .mybutton {
