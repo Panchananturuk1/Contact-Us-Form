@@ -11,7 +11,7 @@ import {HeaderComponent} from './header/header.component'
 import { AppRoutingModule, routingComponent } from './app-routing.module'
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule, ReactiveFormsModule, ],
   declarations: [
     AppComponent,
     HelloComponent,
