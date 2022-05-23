@@ -17,7 +17,7 @@
   </div>
   <!-- MAIN FORM -->
   <div class="parents">
-    <form [formGroup]="sendMessage" class="forms mt-5" (ngSubmit)="send()">
+    <form [formGroup]="sendMessage" class="forms mt-5" (ngSubmit)="send()" #contactForm="ngForm">
       <div class="contents mt-5">
         <h1>Send a Message</h1>
 
@@ -74,12 +74,18 @@
         <div class="textarea">
           <textarea
             class="form-control"
+            formControlName="message"
             rows="4"
             cols="100"
             placeholder="Write your Message here"
           ></textarea>
+          <!-- <div *ngIf="gets.message.errors && gets.message.touched">
+            <span class="text-danger" *ngIf="gets.message.errors.required"
+              >Mobile Number Required</span
+            >
+          </div> -->
         </div>
-        <button class="send-btn mt-3" (click)="printConsole(sendMessage.value)">
+        <button class="send-btn mt-3" [disabled]="contactForm.invalid" (click)="printConsole(sendMessage.value)">
           Send
         </button>
       </div>

@@ -24,6 +24,8 @@ export class SendmsgComponent implements OnInit {
       lastName: new FormControl('', [Validators.required]),
       email: new FormControl('', [Validators.required, Validators.email]),
       mobile: new FormControl('', [Validators.required]),
+      // message: new FormControl('', [Validators.required]),
+      message: new FormControl(''),
     });
   }
 
@@ -33,7 +35,7 @@ export class SendmsgComponent implements OnInit {
 
   send(): void {}
   display = '';
-  
+
   printConsole(val: any) {
     this.display = val;
     console.log(this.display);
