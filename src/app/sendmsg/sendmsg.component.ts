@@ -33,6 +33,7 @@ export class SendmsgComponent implements OnInit {
 
   send(): void {}
   display = '';
+  
   printConsole(val: any) {
     this.display = val;
     console.log(this.display);
